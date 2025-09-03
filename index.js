@@ -12,7 +12,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-  origin: "https://farmer-management-frontend.vercel.app", // your frontend URL
+  origin: "https://farmer-management-frontend-fawn.vercel.app/", // your frontend URL
   credentials: true,
 }));
 
