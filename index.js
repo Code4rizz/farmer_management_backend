@@ -11,7 +11,10 @@ const app = express();
 
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: "https://farmer-management-frontend.vercel.app", // your frontend URL
+  credentials: true,
+}));
 
 
 app.use('/api/auth', authRoutes);
